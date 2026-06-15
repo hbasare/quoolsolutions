@@ -15,12 +15,13 @@ A premium, modern marketing website for **Quool Solutions**, built with high-per
 
 ## 🛠️ Infrastructure & Services
 
-This project is configured with a fully automated, modern deployment pipeline:
+This project is configured with a fully automated, modern deployment pipeline and cloud services:
 
 - **Version Control & Collaboration:** Hosted on [GitHub](https://github.com/) at [hbasare/quoolsolutions](https://github.com/hbasare/quoolsolutions).
 - **Hosting Platform:** [Vercel](https://vercel.com/) (Free tier CDN, providing automatic build previews for pull requests and instant production deployments on pushes to `main`).
 - **Domain Registry:** [GoDaddy](https://godaddy.com/) (Managing the custom domain `quoolsolutions.ca`).
 - **SSL / Security:** Automatically provisioned and renewed with a free Let's Encrypt SSL certificate via Vercel.
+- **Contact Form Handling:** Powered by [Web3Forms](https://web3forms.com/) (Allows submissions from the contact form to be delivered directly to your email address without needing a custom database or server).
 
 ---
 
