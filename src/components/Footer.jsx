@@ -25,8 +25,7 @@ const Footer = () => {
           <div>
             <h4 style={{ fontWeight: 600, marginBottom: '20px' }}>Connect</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <a href="#" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>LinkedIn</a>
-              <a href="#" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Twitter</a>
+              <a href="https://www.linkedin.com/company/quoolsolutions" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>LinkedIn</a>
               <a href="#contact" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Contact</a>
             </div>
           </div>
