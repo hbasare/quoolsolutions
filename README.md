@@ -22,6 +22,7 @@ This project is configured with a fully automated, modern deployment pipeline an
 - **Domain Registry:** [GoDaddy](https://godaddy.com/) (Managing the custom domain `quoolsolutions.ca`).
 - **SSL / Security:** Automatically provisioned and renewed with a free Let's Encrypt SSL certificate via Vercel.
 - **Contact Form Handling:** Powered by [Web3Forms](https://web3forms.com/) (Allows submissions from the contact form to be delivered directly to your email address without needing a custom database or server).
+- **Social Presence:** Linked to the official [LinkedIn Company Page](https://www.linkedin.com/company/quoolsolutions).
 
 ---
 
