@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { CheckCircle2, ChevronRight, Check } from 'lucide-react';
 
 const ScrollReveal = ({ children, className = '', delay = '0s' }) => {
@@ -6,19 +6,20 @@ const ScrollReveal = ({ children, className = '', delay = '0s' }) => {
   const domRef = useRef();
 
   useEffect(() => {
+    const currentDom = domRef.current;
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(domRef.current);
+          if (currentDom) observer.unobserve(currentDom);
         }
       });
     }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
     
-    if (domRef.current) observer.observe(domRef.current);
+    if (currentDom) observer.observe(currentDom);
     
     return () => {
-      if (domRef.current) observer.unobserve(domRef.current);
+      if (currentDom) observer.unobserve(currentDom);
     };
   }, []);
 

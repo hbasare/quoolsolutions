@@ -28,9 +28,98 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Quool Solutions",
+      "image": "https://quoolsolutions.ca/favicon.svg",
+      "@id": "https://quoolsolutions.ca",
+      "url": "https://quoolsolutions.ca",
+      "telephone": "",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/quoolsolutions"
+      ],
+      "description": "Enterprise architecture, AI integration, and robust cloud engineering services to help businesses scale and transform."
+    }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- SEO Fallback Content for Crawlers without JavaScript -->
+      <header style="display:none;">
+        <nav>
+          <a href="#services">Services</a>
+          <a href="#methodology">Methodology</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+      </header>
+      <main style="display:none;">
+        <section id="hero">
+          <h1>Together, we reimagine the Future of your Digital Enterprise</h1>
+          <p>At Quool Solutions, we partner with organizations to transform their digital enterprise, unlocking new opportunities for growth, accelerating innovation, and building the resilience needed to thrive in an ever-changing business landscape.</p>
+        </section>
+        <section id="services">
+          <h2>Transform Your Business with Strategic Technology Solutions</h2>
+          <ul>
+            <li>
+              <h3>AI Strategy &amp; Intelligent Automation</h3>
+              <p>We help organizations identify, implement, and scale AI solutions that automate processes, improve decision-making, enhance customer experiences, and drive measurable business outcomes.</p>
+            </li>
+            <li>
+              <h3>Digital Transformation Roadmapping</h3>
+              <p>Our experts work with your team to identify business challenges, uncover growth opportunities, and create a practical technology roadmap aligned with your strategic objectives.</p>
+            </li>
+            <li>
+              <h3>Enterprise Architecture &amp; Technology Strategy</h3>
+              <p>We design scalable, resilient, and future-ready technology ecosystems that support innovation, improve agility, and enable sustainable business growth.</p>
+            </li>
+            <li>
+              <h3>Custom Software &amp; Platform Engineering</h3>
+              <p>From cloud-native applications to enterprise platforms, we develop secure, scalable, and high-performance software tailored to your unique business needs.</p>
+            </li>
+            <li>
+              <h3>Cloud &amp; IT Operations Excellence</h3>
+              <p>We optimize, secure, and manage critical technology environments to ensure reliability, resilience, and continuous business operations.</p>
+            </li>
+            <li>
+              <h3>Technology Advisory &amp; Executive Consulting</h3>
+              <p>Our senior consultants help leaders navigate digital transformation, modernization initiatives, technology investments, and organizational change with confidence.</p>
+            </li>
+          </ul>
+        </section>
+        <section id="methodology">
+          <h2>Transform Ideas Into Measurable Business Results</h2>
+          <ol>
+            <li>
+              <h3>Define the Opportunity</h3>
+              <p>We uncover growth opportunities, operational inefficiencies, and technology gaps to build a roadmap that delivers measurable business value.</p>
+            </li>
+            <li>
+              <h3>Build Solutions That Scale</h3>
+              <p>Our architects and engineers design secure, resilient, and future-ready solutions that support growth and innovation.</p>
+            </li>
+            <li>
+              <h3>Maximize Value &amp; Performance</h3>
+              <p>We continuously optimize your solutions to ensure reliability, scalability, security, and ongoing business impact.</p>
+            </li>
+          </ol>
+        </section>
+        <section id="contact">
+          <h2>Get in Touch</h2>
+          <p>Turn your vision into results. From digital transformation and cloud solutions to AI and enterprise modernization, we're ready to help you accelerate your business outcomes. Fill out the form below and let's explore what's possible together.</p>
+        </section>
+      </main>
+      <footer style="display:none;">
+        <p>&copy; 2026 Quool Solutions. All rights reserved.</p>
+      </footer>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

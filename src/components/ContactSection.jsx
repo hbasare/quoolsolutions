@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Send, CheckCircle, AlertCircle, User, Mail, Phone, Building, Briefcase, MessageSquare, Tag } from 'lucide-react';
 import './ContactSection.css';
 
@@ -35,14 +35,16 @@ const ContactSection = () => {
       case 'subject':
       case 'message':
         return value.trim() ? '' : 'This field is required';
-      case 'email':
+      case 'email': {
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!value) return 'Email is required';
         return emailRegex.test(value) ? '' : 'Please enter a valid email address';
-      case 'phone':
+      }
+      case 'phone': {
         if (!value) return 'Phone number is required';
         const phoneRegex = /^\(\d{3}\) \d{3}-\d{4}$/;
         return phoneRegex.test(value) ? '' : 'Phone number must be 10 digits';
+      }
       default:
         return '';
     }
@@ -109,7 +111,7 @@ const ContactSection = () => {
       } else {
         setStatus('error');
       }
-    } catch (error) {
+    } catch {
       setStatus('error');
     }
   };

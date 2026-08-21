@@ -1,4 +1,3 @@
-import React from 'react';
 import logo from '../assets/logo.png';
 
 const Footer = () => {
@@ -7,7 +6,7 @@ const Footer = () => {
       <div className="container" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '40px', marginBottom: '40px' }}>
         <div style={{ maxWidth: '300px' }}>
           <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-            <img src={logo} alt="Quool Solutions Logo" style={{ height: '75px' }} />
+            <img src={logo} alt="Quool Solutions - Enterprise Architecture, AI and Cloud Consulting Logo" width="183" height="75" style={{ height: '75px', width: 'auto' }} />
           </div>
           <p style={{ color: 'var(--text-secondary)' }}>
             Elevating your business through modern enterprise architecture, AI, and robust engineering.

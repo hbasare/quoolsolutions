@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrainCircuit, Map, Layers, Code2, Server, Lightbulb, CheckCircle2 } from 'lucide-react';
 
 const services = [
